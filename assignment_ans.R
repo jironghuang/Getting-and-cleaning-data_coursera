@@ -50,7 +50,7 @@ agg_dat = cbind(subject,y_dat,x_mean_sd)
 
 ############################################
 # From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-avg_subj_act = ddply(agg_dat, .avg_subj_act(subject_num, activity), function(x) colMeans(x[, 2:81]))
+avg_subj_act = ddply(agg_dat, .(subject_num, activity), function(x) colMeans(x[, 2:81]))
 
 #Function to return the dataset
 ret_dat = function(data,dirname){
