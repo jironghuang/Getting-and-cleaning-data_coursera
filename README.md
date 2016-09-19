@@ -1,5 +1,5 @@
 # Getting-and-cleaning-data_coursera
-Assignment in Getting and Cleaning Data (Coursera's Data Science Skpecialization)
+Assignment in Getting and Cleaning Data (Coursera's Data Science Specialization)
 
 1. First I read in x (measures), y (activity) and subjects' testing and training data, then I combine the respective testing and training datasets via the 'rbind' function.
 2. Next I read in the 'features' dataset, and subset the rows in the dataset which contains either 'mean' or 'sd'.
